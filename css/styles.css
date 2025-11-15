@@ -62,6 +62,9 @@ img {
 
 .header-container {
     border-bottom: 1px solid #e7e9fc;
+    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+        0px 1px 1px rgba(46, 47, 66, 0.16),
+        0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .header-container .container {
@@ -103,6 +106,24 @@ img {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #2E2F42;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.nav-menu-header-studio {
+position: relative;
+color: #404BBF;
+padding-bottom: 20px;
+}
+
+.nav-menu-header-studio:hover::after {
+    content: "";
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    height: 4px;
+    background-color: #404BBF;
+    border-radius: 2px;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .nav-menu-header:hover, .nav-menu-header:focus {
@@ -148,6 +169,7 @@ color: #404BBF;
 }
 
 /*#endregion Header*/
+
 
 /* #region Section Hero*/
 .hero {
@@ -196,6 +218,7 @@ color: #404BBF;
 }
 /* #endregion Section Hero*/
 
+
 /*#region Section Competence*/
 
 
@@ -242,6 +265,7 @@ color: #404BBF;
     color: #434455;
 }
 /*#endregion Section Competence*/
+
 
 /*#region Section Team*/
 .team-section {
@@ -297,6 +321,7 @@ color: #404BBF;
 }
 /*#endregion Section Team*/
 
+
 /*#region Section Portfolio*/
 
 .portfolio-section {
@@ -349,6 +374,7 @@ color: #404BBF;
     color: #434455;
 }
 /*#endregion Section Portfolio*/
+
 
 /*#region Footer*/
 .footer {
