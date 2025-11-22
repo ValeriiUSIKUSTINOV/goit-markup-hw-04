@@ -100,7 +100,7 @@ img {
 .nav-menu-header {
     display: block;
     position: relative;
-    color: #404BBF;
+    color: #2E2F42;
     padding: 24px 0;
     font-family: "Roboto", sans-serif;
     font-weight: 500;
@@ -110,7 +110,12 @@ img {
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.nav-menu-header::after {
+
+
+.nav-menu-header:hover, .nav-menu-header:focus {
+    color: #404BBF;
+}
+.nav-menu-header.current:active::after {
     content: "";
     width: 100%;
     position: absolute;
@@ -120,13 +125,6 @@ img {
     background-color: #404BBF;
     border-radius: 2px;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.nav-menu-header:hover, .nav-menu-header:focus {
-    color: #404BBF;
-}
-.nav-menu-header:active {
-    color: #404BBF;
 }
 
 .header-address {
@@ -174,12 +172,10 @@ color: #404BBF;
     to bottom,
     rgba(46, 47, 66, 0.7)
     ),
-
-    url(/images/people-office/people-office.jpg);
+    url("../images/people-office/people-office.jpg");
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: cover;
-   
     padding: 188px 0;
 }
 
@@ -269,6 +265,19 @@ color: #404BBF;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #434455;
+}
+
+.social-media {
+    width: 264px;
+    height: 112px;
+    padding: 20px;
+    border: 2px solid rgba(0, 0, 0, 1);
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 20px;
+
 }
 /*#endregion Section Competence*/
 
